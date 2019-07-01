@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <body>
+   <p>Input first number:</p>
+   <input type='number' class='first_val'>
+   <p>Input second number:</p>
+   <input type='number' class='second_val'>
+   <div class='results'></div>
+   <button type='button' class='calculate'>Calculate</button>
+ </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script>
+   $(document).ready(function() {
+     $('.calculate').click(function() {
+       var val1 = parseInt($('.first_val').val());
+       var val2 = parseInt($('.second_val').val());
+       var val3 = val1+val2;
+       $('.results').html('The result is '+val3);
+     });
+   });
+ </script>
+</html>

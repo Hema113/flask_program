@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <p>First input</p>
+    <input type='text' class='first_input'>
+    <p>Second input</p>
+    <input type='text' class='second_input'>
+    <div class='calculate'></div>
+    <button type ='button'>calculate</button>
+  </body>
+  <script>
+    $(document).ready(function(){
+      $(.'calculate').click(function(){
+        var input1 = parseInt($('.first_val').val());
+        var input2 = parseInt($('.second_val').val());
+        var input3 = input1 + input2;
+        $('.results').html('The result is' +input3);
+      });
+    });
+
+
+
+
+
+  
